@@ -10,3 +10,6 @@ console.log(subtract(a,b)); //For testing
 
 multiply = (a,b) => a*b; //Multiply two numbers
 console.log(multiply(a,b)); //For testing
+
+divide = (a,b) => a/b; //Divide two numbers
+console.log(divide(a,b)); //For testing
