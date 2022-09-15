@@ -15,9 +15,6 @@ console.log(multiply(a,b)); //For testing
 divide = (a,b) => a/b; //Divide two numbers
 console.log(divide(a,b)); //For testing
 
-power = (a,b) => a**b; //Raise one number to the power of another
-console.log(power(a,b)); //For testing
-
 operate = () => {
     if (operator == "+"){
       return sum(a,b);
@@ -27,8 +24,6 @@ operate = () => {
         return multiply(a,b)
     } else if (operator == "/"){
         return divide(a,b)
-    } else if (operator == "**"){
-        return power(a,b)
     } else {
         return "not coded yet"
     }
