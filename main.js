@@ -20,7 +20,7 @@ console.log(power(a,b)); //For testing
 
 operate = () => {
     if (operator == "+"){
-        return sum(a,b);
+      return sum(a,b);
     } else if (operator == "-"){
         return subtract (a,b)
     } else if (operator == "*"){
