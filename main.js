@@ -29,3 +29,8 @@ operate = () => {
     }
 } //Takes an operator and 2 numbers and calls the correct function
 console.log(operate()); //For testing
+
+const operationButtons = document.querySelectorAll('.operator')
+const numberButtons = document.querySelectorAll('.number')
+const equalButton = document.querySelector('.equal-sign')
+const clearButton = document.querySelector('.all-clear')
