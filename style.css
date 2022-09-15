@@ -1,0 +1,11 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*padding and border no longer increases width*/
+  }
+  
+  *, *::before, *::after {
+    margin: 0; /*sets the margin and padding of every element to zero*/
+    padding: 0;
+    box-sizing: inherit;
+  } 
+
