@@ -46,6 +46,7 @@ numberButtons.forEach(number => {
 })
 
 equalButton.addEventListener('click', () =>{
+    calculate();
 
 })
 
@@ -68,13 +69,13 @@ calculate = () => {
         previousNum += currentNum;
     } else if (operator === "-") {
         previousNum -= currentNum;
-    } else if (operator === "&times"){
-        previousNum *= currentNum;
-    } else {
+    } else if (operator === "*"){
+        previousNum *= currentNum
+    } else if (operator === "divide") {
         previousNum /= currentNum;
-    }
+    } else {
 
-    
+    }
 
 };
 
@@ -90,7 +91,7 @@ console.log(multiply(a,b)); //For testing
 divide = (a,b) => a/b; //Divide two numbers
 console.log(divide(a,b)); //For testing
 
-operate = () => {
+/*operate = () => {
     if (operator == "+"){
       return sum(a,b);
     } else if (operator == "-"){
@@ -104,5 +105,4 @@ operate = () => {
     }
 } //Takes an operator and 2 numbers and calls the correct function
 console.log(operate()); //For testing
-
-
+*/
