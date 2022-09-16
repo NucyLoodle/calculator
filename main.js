@@ -1,3 +1,13 @@
+class Calculator {
+    constructor(previousCalc,currentCalc) {
+        this.previousCalc = previousCalc
+        this.currentCalc = currentCalc
+        this.clear()
+    }
+}
+
+const calculator = new Calculator(previousCalc,currentCalc)
+
 const operationButtons = document.querySelectorAll('.operator')
 const numberButtons = document.querySelectorAll('.number')
 const equalButton = document.querySelector('.equal-sign')
