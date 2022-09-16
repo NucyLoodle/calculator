@@ -23,12 +23,12 @@ const b = 11
 numberButtons.forEach(number => {
     number.addEventListener('click', (e) => {
         processNumber(e.target.textContent)
-        
+        currentCalc.textContent = currentNum;
         
     })
 })
 
-
+processNumber = (num) => currentNum += num;
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
