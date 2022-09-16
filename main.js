@@ -28,6 +28,15 @@ operationButtons.forEach(op => {
 
 })
 
+clearButton.addEventListener('click', () => {
+    previousNum = ' ';
+    currentNum = ' ';
+    operator = '';
+    previousCalc.textContent = currentNum;
+    currentCalc.textContent = currentNum;
+
+})
+
 numberButtons.forEach(number => {
     number.addEventListener('click', (e) => {
         processNumber(e.target.textContent)
