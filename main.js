@@ -61,7 +61,22 @@ processOperator = (op) => {
     currentNum = '';
 }
 
+calculate = () => {
+    previousNum = Number(previousNum);
+    currentNum = Number(currentNum); //converts the strings into numbers
+    if(operator === "+"){
+        previousNum += currentNum;
+    } else if (operator === "-") {
+        previousNum -= currentNum;
+    } else if (operator === "&times"){
+        previousNum *= currentNum;
+    } else {
+        previousNum /= currentNum;
+    }
 
+    
+
+};
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
