@@ -18,7 +18,15 @@ const b = 11
 //operator = "+"
 // For testing
 
+operationButtons.forEach(op => {
+    op.addEventListener('click',(e) => {
+        processOperator(e.target.textContent)
+        previousCalc.textContent = previousNum + " " + operator;
+        currentCalc.textContent = currentNum;
 
+    })
+
+})
 
 numberButtons.forEach(number => {
     number.addEventListener('click', (e) => {
@@ -34,6 +42,11 @@ processNumber = (num) => {
     }
 }
 
+processOperator = (op) => {
+    operator = op;
+    previousNum = currentNum;
+    currentNum = '';
+}
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
