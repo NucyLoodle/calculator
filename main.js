@@ -6,14 +6,14 @@ class Calculator {
     }
 }
 
-const calculator = new Calculator(previousCalc,currentCalc)
-
 const operationButtons = document.querySelectorAll('.operator')
 const numberButtons = document.querySelectorAll('.number')
 const equalButton = document.querySelector('.equal-sign')
 const clearButton = document.querySelector('.all-clear')
 const previousCalc = document.querySelector('previous-calc')
 const currentCalc = document.querySelector('current-calc')
+
+const calculator = new Calculator(previousCalc,currentCalc)
 
 const a = 7
 const b = 11
@@ -23,7 +23,6 @@ operator = "+"
 numberButtons.forEach(button => {
     button.addEventListener('click', () =>{
         calculator.appendNumber(button.innerText)
-        calculator.updateDisplay()
     })
 })
 
