@@ -1,3 +1,7 @@
+let operator = '';
+let previousNum = '';
+let currentNum = '';
+
 class Calculator {
     constructor(previousCalc,currentCalc) {
         this.previousCalc = previousCalc
@@ -15,10 +19,12 @@ const currentCalc = document.querySelector('current-calc')
 
 const calculator = new Calculator(previousCalc,currentCalc)
 
-const a = 7
-const b = 11
-operator = "+"
+//const a = 7
+//const b = 11
+//operator = "+"
 // For testing
+
+
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () =>{
