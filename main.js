@@ -2,13 +2,7 @@ let operator = '';
 let previousNum = '';
 let currentNum = '';
 
-class Calculator {
-    constructor(previousCalc,currentCalc) {
-        this.previousCalc = previousCalc
-        this.currentCalc = currentCalc
-        this.clear()
-    }
-}
+
 
 const operationButtons = document.querySelectorAll('.operator')
 const numberButtons = document.querySelectorAll('.number')
@@ -17,20 +11,23 @@ const clearButton = document.querySelector('.all-clear')
 const previousCalc = document.querySelector('previous-calc')
 const currentCalc = document.querySelector('current-calc')
 
-const calculator = new Calculator(previousCalc,currentCalc)
 
-//const a = 7
-//const b = 11
+
+const a = 7
+const b = 11
 //operator = "+"
 // For testing
 
 
 
 numberButtons.forEach(button => {
-    button.addEventListener('click', () =>{
-        calculator.appendNumber(button.innerText)
+    button.addEventListener('click', (e) =>{
+        processNumber(e.target.textContent)
+       
     })
 })
+
+processNumber = (num) => console.log(num)
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
