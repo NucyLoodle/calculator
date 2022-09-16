@@ -45,6 +45,10 @@ numberButtons.forEach(number => {
     })
 })
 
+equalButton.addEventListener('click', () =>{
+
+})
+
 processNumber = (num) => {
     if (currentNum.length <= 6){
         currentNum += num;
@@ -56,6 +60,8 @@ processOperator = (op) => {
     previousNum = currentNum;
     currentNum = '';
 }
+
+
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
