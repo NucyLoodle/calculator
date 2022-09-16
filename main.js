@@ -10,7 +10,7 @@ const equalButton = document.querySelector('.equal-sign')
 const clearButton = document.querySelector('.all-clear')
 const previousCalc = document.querySelector('.previous-calc')
 const currentCalc = document.querySelector('.current-calc')
-
+const decimalButton = document.querySelector('.decimal')
 
 
 const a = 7
@@ -26,6 +26,9 @@ operationButtons.forEach(op => {
 
     })
 
+})
+decimalButton.addEventListener('click',() => {
+    addDecimal()
 })
 
 clearButton.addEventListener('click', () => {
@@ -47,7 +50,8 @@ numberButtons.forEach(number => {
 
 equalButton.addEventListener('click', () =>{
     calculate();
-    
+    previousCalc.textContent = '';
+    currentCalc.textContent = previousNum;
 
 })
 
@@ -79,6 +83,12 @@ calculate = () => {
     }
 
 };
+
+addDecimal = () => {
+    if(!currentNum.includes(".")){
+        currentNum += '.';
+    }
+}
 
 
 
