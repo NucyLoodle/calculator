@@ -1,6 +1,6 @@
 let operator = '';
-let previousNum = '';
-let currentNum = '';
+let previousNum = ' ';
+let currentNum = ' ';
 
 
 
@@ -29,7 +29,7 @@ numberButtons.forEach(number => {
 })
 
 processNumber = (num) => {
-    if (currentNum.length < 7){
+    if (currentNum.length <= 6){
         currentNum += num;
     }
 }
