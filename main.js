@@ -8,8 +8,8 @@ const operationButtons = document.querySelectorAll('.operator')
 const numberButtons = document.querySelectorAll('.number')
 const equalButton = document.querySelector('.equal-sign')
 const clearButton = document.querySelector('.all-clear')
-const previousCalc = document.querySelector('previous-calc')
-const currentCalc = document.querySelector('current-calc')
+const previousCalc = document.querySelector('.previous-calc')
+const currentCalc = document.querySelector('.current-calc')
 
 
 
@@ -20,14 +20,15 @@ const b = 11
 
 
 
-numberButtons.forEach(button => {
-    button.addEventListener('click', (e) =>{
+numberButtons.forEach(number => {
+    number.addEventListener('click', (e) => {
         processNumber(e.target.textContent)
-       
+        
+        
     })
 })
 
-processNumber = (num) => console.log(num)
+
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
