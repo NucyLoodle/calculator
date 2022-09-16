@@ -47,6 +47,7 @@ numberButtons.forEach(number => {
 
 equalButton.addEventListener('click', () =>{
     calculate();
+    
 
 })
 
@@ -71,13 +72,15 @@ calculate = () => {
         previousNum -= currentNum;
     } else if (operator === "*"){
         previousNum *= currentNum
-    } else if (operator === "divide") {
+    } else if (operator === "/") {
         previousNum /= currentNum;
     } else {
 
     }
 
 };
+
+
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
