@@ -1,3 +1,9 @@
+const operationButtons = document.querySelectorAll('.operator')
+const numberButtons = document.querySelectorAll('.number')
+const equalButton = document.querySelector('.equal-sign')
+const clearButton = document.querySelector('.all-clear')
+const previousCalc = document.querySelector('previous-calc')
+const currentCalc = document.querySelector('current-calc')
 const a = 7
 const b = 11
 operator = "+"
@@ -30,7 +36,4 @@ operate = () => {
 } //Takes an operator and 2 numbers and calls the correct function
 console.log(operate()); //For testing
 
-const operationButtons = document.querySelectorAll('.operator')
-const numberButtons = document.querySelectorAll('.number')
-const equalButton = document.querySelector('.equal-sign')
-const clearButton = document.querySelector('.all-clear')
+
