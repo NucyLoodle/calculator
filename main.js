@@ -14,10 +14,18 @@ const equalButton = document.querySelector('.equal-sign')
 const clearButton = document.querySelector('.all-clear')
 const previousCalc = document.querySelector('previous-calc')
 const currentCalc = document.querySelector('current-calc')
+
 const a = 7
 const b = 11
 operator = "+"
 // For testing
+
+numberButtons.forEach(button => {
+    button.addEventListener('click', () =>{
+        calculator.appendNumber(button.innerText)
+        calculator.updateDisplay()
+    })
+})
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
