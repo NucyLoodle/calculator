@@ -28,7 +28,12 @@ numberButtons.forEach(number => {
     })
 })
 
-processNumber = (num) => currentNum += num;
+processNumber = (num) => {
+    if (currentNum.length < 7){
+        currentNum += num;
+    }
+}
+
 
 sum = (a,b) => a + b; //Add two numbers together
 console.log(sum(a,b)); //For testing
