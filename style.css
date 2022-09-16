@@ -22,7 +22,7 @@ html {
 
 .calculator-display{
     width: 100%;
-    font-size: 5rem;
+    font-size: 3rem;
     height: 80px;
     border: none;
     background-color: #252525;
@@ -64,3 +64,5 @@ button:hover {
     grid-column-start: 4;
     grid-column-end: 5;
 }
+
+
